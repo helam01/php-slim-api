@@ -33,7 +33,7 @@
             <p>Comando recebido <?= htmlspecialchars($data['param']."=".$data['command']); ?></p>
             <img src="assets/images/<?php echo $data['param'].$data['command']; ?>.png" style="width:100px">
         <?php else: ?>
-            <p>Nenhum comando válido recebido. Consulte <a href="">aqui</a> a lista de comandos válidos 
+            <p>Nenhum comando válido recebido. Consulte <a href='<?php echo "http://".$request->getServerParams()['HTTP_HOST']; ?>'>aqui</a> a lista de comandos válidos 
         <?php endif; ?>
 
         <p><a href='<?php echo "http://".$request->getServerParams()['HTTP_HOST']; ?>'>Voltar a lista de comandos</a></p>

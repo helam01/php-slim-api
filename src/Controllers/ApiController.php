@@ -45,6 +45,9 @@ class ApiController extends Controller
 		$param = $this->checkCommand($data);
 
 		if ( $param["param"] ) {
+			if ( !isset($this->command_list[$param["param"]]["commands"][$param["command"]]) ) {
+				$param = null;
+			}
 
 			return $this->response($request, $response, $param);
 		}
