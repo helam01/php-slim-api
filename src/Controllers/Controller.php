@@ -13,7 +13,7 @@ class Controller
 		$this->ci = $ci;
 	}
 
-	protected function response($request, $response, $data=[])
+	protected function response($request, $response, $data=[], $args=[])
 	{
 		return $this->checkResponteType($request, $response, $data);
 	}

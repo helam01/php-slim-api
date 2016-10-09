@@ -31,6 +31,7 @@
 
         <?php if (isset($data)) : ?>
             <p>Comando recebido <?= htmlspecialchars($data['param']."=".$data['command']); ?></p>
+            <img src="assets/images/<?php echo $data['param'].$data['command']; ?>.png" style="width:100px">
         <?php else: ?>
             <p>Nenhum comando válido recebido. Consulte <a href="">aqui</a> a lista de comandos válidos 
         <?php endif; ?>

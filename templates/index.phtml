@@ -57,7 +57,10 @@
 
                                     <td><?php echo $param ?></td>    
                                     <td><?php echo $command ?></td>    
-                                    <td><?php echo $description ?></td>    
+                                    <td>
+                                        <img src="assets/images/<?php echo $param.$command; ?>.png" style="width:60px">
+                                        <?php echo $description ?>
+                                    </td>    
                                     <td> <a href="<?php echo $url ?>"> <?php echo $url ?></a></td>    
                                 </tr>
                                 
